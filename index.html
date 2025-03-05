@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KingNoCode - Soluciones Digitales Profesionales</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.jpg" alt="KingNoCode Logo" class="logo" />
+          KingNoCode
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#beneficios">Beneficios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+      <div class="video-background">
+        <video autoplay muted loop playsinline>
+          <source
+            src="https://cdn.pixabay.com/video/2022/10/24/136268-764387688_large.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video-overlay"></div>
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1200">
+            <h1 class="display-4 fw-bold neon-text">
+              Transforma tu Presencia Digital
+            </h1>
+            <p class="lead my-4">
+              Diseño web profesional, desarrollo de apps y soluciones digitales
+              que llevan tu negocio al siguiente nivel. Sin código complicado,
+              solo resultados extraordinarios.
+            </p>
+            <div class="cta-container">
+              <button
+                id="cta-button"
+                class="btn btn-primary btn-lg explosion-btn"
+              >
+                ¡Impulsa tu Negocio Ahora!
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1200">
+            <div class="hero-image-container">
+              <img
+                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                alt="Tecnología Digital"
+                class="img-fluid rounded-3d"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tech-particles"></div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <h2 class="display-5 fw-bold neon-text">Nuestros Servicios</h2>
+          <p class="lead">
+            Soluciones digitales personalizadas para impulsar tu presencia
+            online
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Servicio 1 -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="flip-left"
+            data-aos-delay="100"
+          >
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fab fa-wordpress"></i>
+              </div>
+              <h3>Diseño Web en WordPress</h3>
+              <p>
+                Sitios web profesionales y personalizados con WordPress.
+                Optimizados para móviles, rápidos y fáciles de administrar.
+              </p>
+              <div class="service-hover">
+                <p>
+                  Desde tiendas online hasta blogs corporativos, creamos
+                  experiencias web que convierten visitantes en clientes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio 2 -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="flip-left"
+            data-aos-delay="200"
+          >
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Diseño Web a Medida</h3>
+              <p>
+                Desarrollo web personalizado con las últimas tecnologías. Sitios
+                únicos que reflejan la esencia de tu marca.
+              </p>
+              <div class="service-hover">
+                <p>
+                  Creamos experiencias digitales únicas con diseños exclusivos y
+                  funcionalidades personalizadas para tu negocio.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio 3 -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="flip-left"
+            data-aos-delay="300"
+          >
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3>Creación de Apps</h3>
+              <p>
+                Aplicaciones móviles nativas e híbridas para iOS y Android.
+                Lleva tu negocio al bolsillo de tus clientes.
+              </p>
+              <div class="service-hover">
+                <p>
+                  Desde la idea hasta la publicación en las tiendas, te
+                  acompañamos en todo el proceso de desarrollo de tu app.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio 4 -->
+          <div
+            class="col-md-6 col-lg-6"
+            data-aos="flip-left"
+            data-aos-delay="400"
+          >
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-pen-fancy"></i>
+              </div>
+              <h3>Creación de Contenido</h3>
+              <p>
+                Contenido persuasivo y optimizado para SEO que conecta con tu
+                audiencia y mejora tu posicionamiento.
+              </p>
+              <div class="service-hover">
+                <p>
+                  Estrategias de contenido que cuentan tu historia, resuelven
+                  problemas de tus clientes y generan conversiones.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio 5 -->
+          <div
+            class="col-md-6 col-lg-6"
+            data-aos="flip-left"
+            data-aos-delay="500"
+          >
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h3>Cursos Especializados</h3>
+              <p>
+                Formación práctica en desarrollo web, marketing digital y
+                tecnologías emergentes para profesionales y empresas.
+              </p>
+              <div class="service-hover">
+                <p>
+                  Aprende habilidades digitales prácticas con metodologías
+                  probadas y mentorías personalizadas para acelerar tu
+                  crecimiento.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficios Section -->
+    <section id="beneficios" class="py-5 bg-dark text-white">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <h2 class="display-5 fw-bold neon-text">¿Por qué elegirnos?</h2>
+          <p class="lead">Beneficios que transforman tu experiencia digital</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h3>Velocidad de Entrega</h3>
+              <p>
+                Proyectos entregados en tiempo récord sin sacrificar calidad. Tu
+                presencia digital lista cuando la necesitas.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h3>Diseño Único</h3>
+              <p>
+                Creaciones visuales impactantes que destacan tu marca y generan
+                una experiencia memorable para tus usuarios.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <h3>Tecnología Avanzada</h3>
+              <p>
+                Implementamos las últimas tecnologías y mejores prácticas para
+                garantizar soluciones robustas y escalables.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <i class="fas fa-search"></i>
+              </div>
+              <h3>SEO Optimizado</h3>
+              <p>
+                Posicionamiento orgánico desde el primer día. Estructuras y
+                contenidos pensados para los motores de búsqueda.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3>100% Responsive</h3>
+              <p>
+                Experiencias perfectas en cualquier dispositivo. Tu presencia
+                digital adaptada a todos los tamaños de pantalla.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="600">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <i class="fas fa-headset"></i>
+              </div>
+              <h3>Soporte Continuo</h3>
+              <p>
+                No te dejamos solo. Acompañamiento y asesoría constante para el
+                crecimiento sostenido de tu proyecto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section id="testimonios" class="py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <h2 class="display-5 fw-bold neon-text">
+            Lo que dicen nuestros clientes
+          </h2>
+          <p class="lead">Historias de éxito que hablan por sí solas</p>
+        </div>
+
+        <div class="testimonial-carousel" data-aos="fade-up">
+          <div class="testimonial-track">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "KingNoCode transformó completamente mi presencia online. Mi
+                  tienda virtual ahora genera ventas automáticas mientras
+                  duermo. La mejor inversión para mi negocio."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img
+                  src="https://randomuser.me/api/portraits/women/32.jpg"
+                  alt="Cliente"
+                  class="testimonial-avatar"
+                />
+                <div>
+                  <h5>Laura Méndez</h5>
+                  <p>Fundadora, Eco Boutique</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "Increíble trabajo con nuestra app. El proceso fue fluido y el
+                  resultado superó nuestras expectativas. Nuestros clientes
+                  adoran la experiencia y las descargas no paran de crecer."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img
+                  src="https://randomuser.me/api/portraits/men/41.jpg"
+                  alt="Cliente"
+                  class="testimonial-avatar"
+                />
+                <div>
+                  <h5>Carlos Jiménez</h5>
+                  <p>Director, TechSolutions</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "El curso de desarrollo web cambió mi carrera profesional. En
+                  3 meses pasé de no saber nada a conseguir mi primer cliente.
+                  La metodología es práctica y el soporte constante."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img
+                  src="https://randomuser.me/api/portraits/women/68.jpg"
+                  alt="Cliente"
+                  class="testimonial-avatar"
+                />
+                <div>
+                  <h5>Ana Gutiérrez</h5>
+                  <p>Freelancer Digital</p>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial 4 -->
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "Nuestro sitio web ahora refleja perfectamente nuestra marca.
+                  Las ventas han aumentado un 200% desde el rediseño. El equipo
+                  de KingNoCode entendió exactamente lo que necesitábamos."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img
+                  src="https://randomuser.me/api/portraits/men/92.jpg"
+                  alt="Cliente"
+                  class="testimonial-avatar"
+                />
+                <div>
+                  <h5>Roberto Vega</h5>
+                  <p>CEO, Innovatech</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-5 bg-dark text-white">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <h2 class="display-5 fw-bold neon-text">¡Hablemos de tu Proyecto!</h2>
+          <p class="lead">Transforma tu visión en realidad digital</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="contact-card" data-aos="zoom-in">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="contact-info">
+                    <h3>Conecta con nosotros</h3>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a
+                          href="https://wa.me/529983206166"
+                          class="btn btn-warning btn-lg w-100 mb-3"
+                        >
+                          <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="mailto:kingnocode369@gmail.com"
+                          class="contact-link"
+                        >
+                          <i class="fas fa-envelope"></i>
+                          kingnocode369@gmail.com
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.facebook.com/profile.php?id=61573583173114"
+                          target="_blank"
+                          class="contact-link"
+                        >
+                          <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.instagram.com/kingnocode"
+                          target="_blank"
+                          class="contact-link"
+                        >
+                          <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.tiktok.com/@kingnocode"
+                          target="_blank"
+                          class="contact-link"
+                        >
+                          <i class="fab fa-tiktok"></i> TikTok
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="cta-section text-center">
+                    <h3>¿Listo para despegar?</h3>
+                    <p>Da el primer paso hacia tu transformación digital</p>
+                    <a
+                      href="https://wa.me/529983206166"
+                      class="btn btn-primary btn-lg explosion-btn"
+                    >
+                      ¡Comencemos Ahora!
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-darker text-white">
+      <div class="container text-center">
+        <img
+          src="img/logo.jpg"
+          alt="KingNoCode Logo"
+          class="footer-logo mb-3"
+        />
+        <p>© 2025 KingNoCode. Transformando ideas en realidades digitales.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

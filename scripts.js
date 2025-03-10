@@ -59,3 +59,21 @@ window.addEventListener("scroll", function () {
     element.style.transform = `translateY(${scrolled * speed}px)`;
   });
 });
+// Add this to your existing scripts.js file
+
+// Glow effect for price cards
+document.addEventListener("DOMContentLoaded", function () {
+  const priceCards = document.querySelectorAll(".price-card");
+
+  priceCards.forEach((card) => {
+    card.addEventListener("mousemove", function (e) {
+      const rect = this.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+      this.style.setProperty("--x", `${x}%`);
+      this.style.setProperty("--y", `${y}%`);
+    });
+  });
+});
+

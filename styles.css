@@ -1,5 +1,6 @@
 :root {
   --primary-color: #ff6b00;
+  --primary-rgb: 255, 107, 0; /* Adding RGB values for primary color */
   --secondary-color: #2d3436;
   --accent-color: #00ff88;
   --dark-color: #1a1a1a;
@@ -122,6 +123,84 @@ body {
 .benefit-card:hover {
   transform: scale(1.05);
   box-shadow: var(--neon-shadow);
+}
+
+/* FAQ Accordion Styles */
+.faq-accordion .accordion-item {
+  border: none;
+  background: transparent;
+  margin-bottom: 1rem;
+}
+
+.faq-accordion .accordion-button {
+  background: rgba(26, 26, 26, 0.8);
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+  background: var(--primary-color);
+  color: white;
+  box-shadow: 0 0 15px rgba(255, 107, 0, 0.3);
+}
+
+.faq-accordion .accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(255, 107, 0, 0.5);
+}
+
+.faq-accordion .accordion-button::after {
+  background-size: 1.2rem;
+  transition: all 0.3s ease;
+  filter: brightness(0) invert(1); /* Make the arrow icon white */
+}
+
+.faq-accordion .accordion-body {
+  padding: 1.5rem;
+  background: rgba(26, 26, 26, 0.5);
+  color: white;
+  border-radius: 0 0 10px 10px;
+}
+
+.faq-accordion .accordion-collapse {
+  border: none;
+}
+
+.faq-cta {
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+  color: white;
+}
+
+.btn-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  background: rgba(0, 255, 136, 0.1);
+}
+
+.btn-link:hover {
+  background: var(--accent-color);
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+.faq-accordion .accordion-button i {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) i {
+  color: white;
 }
 
 /* Testimonial Carousel */
@@ -341,4 +420,124 @@ h6,
   background: var(--accent-color);
   color: var(--dark-color);
   transform: translateY(-5px);
+}
+
+/* Pricing Cards */
+.price-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px var(--accent-color);
+}
+
+.price-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.price-header h3 {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.price span {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.price-features {
+  flex-grow: 1;
+  margin-bottom: 2rem;
+}
+
+.price-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.price-features li {
+  color: white;
+  padding: 0.7rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.price-features i {
+  color: var(--accent-color);
+  margin-right: 10px;
+}
+
+.price-footer {
+  text-align: center;
+}
+
+.price-card.featured {
+  transform: scale(1.05);
+  border: 2px solid var(--accent-color);
+  z-index: 1;
+}
+
+.price-card.featured:hover {
+  transform: scale(1.08) translateY(-10px);
+  box-shadow: 0 0 30px var(--accent-color);
+}
+
+.price-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--accent-color);
+  color: var(--dark-color);
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  border-bottom-left-radius: 15px;
+}
+
+/* Hover effect for price cards */
+.price-card {
+  position: relative;
+}
+
+.price-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    rgba(0, 255, 136, 0.3) 0%,
+    rgba(0, 0, 0, 0) 50%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.price-card:hover::before {
+  opacity: 1;
 }
